@@ -8,10 +8,31 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Object",
+"class": "Commands",
+"language": "GDScript",
+"path": "res://addons/obsws/lib/Commands.gd"
+}, {
+"base": "Node",
+"class": "ObsWs",
+"language": "GDScript",
+"path": "res://addons/obsws/lib/obsws.gd"
+} ]
+_global_script_class_icons={
+"Commands": "",
+"ObsWs": ""
+}
+
 [application]
 
 config/name="OBSWSExample"
+run/main_scene="res://OBSInterface.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/obsws/plugin.cfg" )
 
 [physics]
 
